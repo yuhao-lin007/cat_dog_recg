@@ -95,7 +95,7 @@ print(net)
 
 #loss fuct
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(net.parameters(), lr=0.0001, momentum=0.9)
+optimizer = optim.SGD(net.parameters(), lr=0.0001, momentum=0.9, weight_decay=0.001)
 
 def train():
     for epoch in range(epochs):
